@@ -10,10 +10,14 @@ def euler_n1(do_print_result: bool) -> list[int]:
         if n % 3 == 0 or n % 5 == 0:
             tested_numbers.append(n)
 
+    sum = 0
+    for n in tested_numbers:
+        sum += n
+
     time_2 = time_ns()
 
     if do_print_result:
-        print(f"\nHere are all the integers between 1 and 1 000 that are multiple of 3 or 5 :\n{tested_numbers}\n")
+        print(f"\nHere is the sum of all the integers between 1 and 1 000 that are multiple of 3 or 5 :\n{sum}\n")
         print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds\n")
     
-    return tested_numbers
+    return sum
