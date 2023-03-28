@@ -1,5 +1,6 @@
 from time import time_ns
 from additional_script.prime_related_functions import get_prime_scope
+from additional_script.accessibility_settings import time_precision
 
 time_1 = time_ns()
 
@@ -19,4 +20,4 @@ time_2 = time_ns()
 
 print(f"\nThe biggest prime factor of {number_to_test} is: {biggest_prime}\n")
 
-print(f"\nComputing time: {round((time_2 - time_1) / 10**9, 8)}")
+print(f"\nComputing time: {round((time_2 - time_1) / 10**9, time_precision)}")
