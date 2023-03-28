@@ -24,7 +24,7 @@ def euler_n5(do_print_result: int) -> int:
 
     if do_print_result:
         print(f"\nThe lowest integer that can be divided by all the numbers between 1 and {upper_limit} is: {product}\n")
-        print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds")
+        print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds\n")
     
     return product
 

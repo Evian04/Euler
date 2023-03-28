@@ -19,6 +19,6 @@ def euler_n4(do_print_result: bool) -> int:
 
     if do_print_result:
         print(f"\nHere is the biggest palindrome that can be written as the product of two 3-digits integers: {biggest_palindrome}\n")
-        print(f"\nComputing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds")
+        print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds\n")
     
     return biggest_palindrome

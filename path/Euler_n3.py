@@ -21,6 +21,6 @@ def euler_n3(do_print_result) -> int:
 
     if do_print_result:
         print(f"\nThe biggest prime factor of {number_to_test} is: {biggest_prime}\n")
-        print(f"\nComputing time: {round((time_2 - time_1) / 10**9, time_precision)}")
+        print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)}\n")
     
     return biggest_prime

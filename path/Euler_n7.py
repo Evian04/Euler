@@ -13,7 +13,7 @@ def euler_n7(do_print_result: bool) -> int:
     time_2 = time_ns()
 
     if do_print_result:
-        print(f"The 10 001 th prime is: {prime}")
+        print(f"\nThe 10 001 th prime is: {prime}\n")
         print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds\n")
     
     return prime
