@@ -22,3 +22,17 @@ def get_prime_scope(min: int, max: int) -> list:
 			scope.append(n)
 	
 	return scope
+
+def get_prime_decomp(n: int) -> list[int]:
+    if is_prime(n):
+        return [n]
+
+    decomp = []
+    posssible_primes = get_prime_scope(2, n // 2)
+
+    for p in posssible_primes:
+        while n % p == 0:
+            decomp.append(p)
+            n = n // p
+    
+    return decomp
