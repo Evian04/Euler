@@ -13,3 +13,12 @@ def get_next_prime(limit: int) -> int:
 
         if is_prime(n):
             return n
+
+def get_prime_scope(min: int, max: int) -> list:
+	scope = []
+
+	for n in range(min, max + 1):
+		if is_prime(n):
+			scope.append(n)
+	
+	return scope
