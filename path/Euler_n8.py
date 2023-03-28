@@ -24,4 +24,4 @@ print(f"\nbiggest product found: {biggest_product}")
 print(f"index corresponding: {index_biggest_product + 1}")
 print(f"sequence corresponding: \"{digits[index_biggest_product:index_biggest_product+5]}\"\n")
 
-print(f"Computing time: {round((time_2 - time_1) / 10**9, 4)} seconds\n")
+print(f"Computing time: {round((time_2 - time_1) / 10**9, 8)} seconds\n")
