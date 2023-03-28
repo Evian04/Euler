@@ -25,3 +25,6 @@ def euler_n4(do_print_result: bool) -> int:
         print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds\n")
     
     return biggest_palindrome
+
+if __name__ == "__main__":
+    euler_n4(True)

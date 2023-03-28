@@ -24,3 +24,6 @@ def euler_n3(do_print_result) -> int:
         print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)}\n")
     
     return biggest_prime
+
+if __name__ == "__main__":
+    euler_n3(True)

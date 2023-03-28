@@ -31,3 +31,6 @@ def euler_n8(do_print_result: bool, digits: str = "") -> int:
         print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds\n")
     
     return index_biggest_product
+
+if __name__ == "__main__":
+    euler_n8(True)

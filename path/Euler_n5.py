@@ -29,3 +29,6 @@ def euler_n5(do_print_result: int) -> int:
     return product
 
 euler_n5(True)
+
+if __name__ == "__main__":
+    euler_n5(True)
