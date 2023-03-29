@@ -18,3 +18,15 @@ def get_divisors(n: int) -> list[int]:
                     divisors.append(n // i)
     
     return divisors
+
+def euler_14_sequence(n: int) -> list[int]:
+    sequence = [n]
+
+    while sequence[-1] != 1:
+        if sequence[-1] % 2 == 0:
+            sequence.append(sequence[-1] // 2)
+        
+        else:
+            sequence.append(sequence[-1] * 3 + 1)
+    
+    return sequence
