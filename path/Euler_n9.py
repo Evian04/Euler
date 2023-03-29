@@ -31,8 +31,8 @@ def euler_n9(do_print_result: bool) -> int:
     time_2 = time_ns()
 
     if do_print_result:
-        print(f"\nThe only triplet of Pythagoras whose sum = 1000 is: {abc[0]}, {abc[1]} and {abc[2]}")
-        print(f"The product of these numbers is: {product}\n")
+        print(f"\nThe product of The only triplet of Pythagoras whose sum = 1000 is: {product}")
+        print(f"The triplet in question: {abc[0]}, {abc[1]} and {abc[2]}\n")
         print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds")
     
     return product

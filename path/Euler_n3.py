@@ -1,11 +1,8 @@
 from time import time_ns
 from additional_script.accessibility_settings import time_precision
 
-def euler_n3(do_print_result, number_to_test: int = 0) -> int:
+def euler_n3(do_print_result, number_to_test: int = 600851475143) -> int:
     time_1 = time_ns()
-    
-    if number_to_test == 0:
-        number_to_test = 600851475143 # 600 851 475 143
 
     result = number_to_test
     i = 2

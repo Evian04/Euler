@@ -1,10 +1,8 @@
 from time import time_ns
 from additional_script.accessibility_settings import time_precision
 
-def euler_n6(do_print_result: bool) -> int:
+def euler_n6(do_print_result: bool, first_integers: int = 100) -> int:
     time_1 = time_ns()
-    
-    first_integers = 10
 
     sum_of_squares = 0
     for i in range(1, first_integers + 1):
@@ -21,7 +19,7 @@ def euler_n6(do_print_result: bool) -> int:
 
     if do_print_result:
         print(f"\nThe difference between the square of the sum and the sum of the square is: {difference}\n")
-        print(f"Computing time: {round(time_2 - time_1) / 10**9, time_precision} seconds\n")
+        print(f"Computing time: {round((time_2 - time_1) / 10**9, time_precision)} seconds\n")
     
     return difference
 

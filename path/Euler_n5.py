@@ -2,10 +2,8 @@ from time import time_ns
 from additional_script.accessibility_settings import time_precision
 from additional_script.prime_related_functions import get_prime_decomp
 
-def euler_n5(do_print_result: int) -> int:
+def euler_n5(do_print_result: int, upper_limit: int = 20) -> int:
     time_1 = time_ns()
-
-    upper_limit = 20
 
     numbers_to_test = range(2, upper_limit + 1)
     product = 1
