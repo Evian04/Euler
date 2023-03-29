@@ -8,9 +8,7 @@ def euler_n10(do_print_result: bool) -> int:
     limit = 2000000
 
     list_primes = get_prime_scope(2, limit)
-
-    print("scope got")
-
+    
     sum = 0
     for prime in list_primes:
         sum += prime

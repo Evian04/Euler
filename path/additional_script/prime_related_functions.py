@@ -15,13 +15,19 @@ def get_next_prime(limit: int) -> int:
             return n
 
 def get_prime_scope(min: int, max: int) -> list:
-	scope = []
+    scope = []
 
-	for n in range(min, max + 1):
-		if is_prime(n):
-			scope.append(n)
+    if min <= 2:
+        scope.append(2)
+
+    if min % 2 == 0:
+        min += 1
+
+    for n in range(min, max + 1, 2):
+        if is_prime(n):
+            scope.append(n)
 	
-	return scope
+    return scope
 
 def get_prime_decomp(n: int) -> list[int]:
     if is_prime(n):
