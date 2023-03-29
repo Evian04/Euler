@@ -7,11 +7,14 @@ def euler_n9(do_print_result: bool) -> int:
     sum = 1000
     abc = ()
 
-    for a in range(sum):
-        for b in range(sum):
+    for a in range(1, sum):
+        for b in range(1, sum):
             c = sum - a - b
 
             if c < 0:
+                continue
+
+            if a > b or b > c:
                 continue
 
             if a ** 2 + b ** 2 != c ** 2:
