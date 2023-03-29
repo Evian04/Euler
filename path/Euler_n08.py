@@ -1,9 +1,13 @@
+"""
+Find the thirteen adjacent digits in the 1000-digit number (the `const_digits` variable) that have the greatest product.
+What is the value of this product?
+"""
 from time import time_ns
 from additional_script.accessibility_settings import time_precision
 from additional_script.constants import const_digits
 
 
-def euler_n8(do_print_result: bool, digits: str = "") -> int:
+def euler_n8(do_print_result: bool, digits: str = "", adjacent_digits: int = 13) -> int:
     time_1 = time_ns()
 
     if not digits:
@@ -12,8 +16,8 @@ def euler_n8(do_print_result: bool, digits: str = "") -> int:
     biggest_product = 0
     index_biggest_product = 0
 
-    for i in range(len(digits) - 5):
-        five_digits = [int(d) for d in digits[i:i+5]]
+    for i in range(len(digits) - adjacent_digits):
+        five_digits = [int(d) for d in digits[i:i+adjacent_digits]]
         product = 1
 
         for d in five_digits:

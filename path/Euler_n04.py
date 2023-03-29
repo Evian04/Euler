@@ -1,3 +1,6 @@
+"""
+Find the largest palindrome made from the product of two 3-digit numbers.
+"""
 from time import time_ns
 from additional_script.accessibility_settings import time_precision
 from additional_script.other_functions import is_palindrome
