@@ -1,6 +1,6 @@
 """
-The following iterative sequence is defined for the set of positive integers: n → n/2 if n is even; n → 3n + 1 if n is odd.
-Find the starting number lower than one million that produces the longest chain?
+The following iterative sequence is defined for the set of positive integers: n → n/2 if n is even, n → 3n + 1 if n is odd.
+Find the starting number lower than one million that produces the longest chain.
 Note: Once the chain starts the terms are allowed to go above one million.
 """
 from time import time_ns
