@@ -1,3 +1,5 @@
+from math import isqrt
+
 def is_palindrome(n: str) -> bool:
     for i in range(len(n) // 2):
         if n[i] != n[-i - 1]:
@@ -5,10 +7,14 @@ def is_palindrome(n: str) -> bool:
     
     return True
 
-def get_triangle(n: int) -> int:
-    sum = 0
+def get_divisors(n: int) -> list[int]:
+    divisors = []
 
-    for i in range(n + 1):
-        sum += n
+    for i in range(1, isqrt(n) + 1):
+            if n % i == 0:
+                divisors.append(i)
+
+                if n // i != i:
+                    divisors.append(n // i)
     
-    return sum
+    return divisors
