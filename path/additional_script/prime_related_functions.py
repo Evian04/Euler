@@ -1,5 +1,7 @@
+from math import isqrt
+
 def is_prime(n: int) -> bool:
-    for i in range(2, round(n ** (1/2)) + 1):
+    for i in range(2, isqrt(n) + 1):
         if n % i == 0:
             return False
     
