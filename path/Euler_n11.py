@@ -15,13 +15,18 @@ def euler_n11(do_print_result: bool, grid: list[list[int]] = []) -> int:
     index = ()
     direction = ()
 
-    for i in range(len(grid) - 3):
-        for j in range(len(grid[0]) - 3):
-            for d in [(0, 1), (1, 0), (1, 1)]:
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            for d in [(0, 1), (1, 0), (1, 1), (1, -1)]:
                 product = 1
 
                 for increment in range(4):
-                    product *= grid[i + increment * d[0]][j + increment * d[1]]
+                    if i + increment * d[0] in range(len(grid)) and j + increment * d[1] in range(len(grid[0])):
+                        product *= grid[i + increment * d[0]][j + increment * d[1]]
+                    
+                    else:
+                        product = 0
+                        break
                 
                 if product > biggest_product:
                     biggest_product = product
@@ -34,7 +39,9 @@ def euler_n11(do_print_result: bool, grid: list[list[int]] = []) -> int:
     
     elif direction == (1, 0): direction = "down"
     
-    else: direction = "diagonal"
+    elif direction == (1, 1): direction = "diagonal down right"
+
+    else: direction = "diagonal down left"
 
     time_2 = time_ns()
 
