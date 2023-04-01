@@ -70,3 +70,9 @@ def get_letters(n: int) -> str:
         return number_to_letters[n]
     
     print("Error function `path.additional_script.other_functions.get_letters()` : the given number cannot be negative")
+
+def is_leap(year: int) -> bool:
+    if year % 4 != 0 or year % 400 == 0:
+        return False
+    
+    return True
