@@ -76,3 +76,9 @@ def is_leap(year: int) -> bool:
         return False
     
     return True
+
+def factorial(n: int) -> int:
+    if n == 1:
+        return 1
+    
+    return n * factorial(n - 1)
