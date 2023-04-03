@@ -2,8 +2,8 @@
 Find the sum of all the prime numbers below two million.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.prime_related_functions import get_prime_scope
+from additional_files.accessibility_settings import time_precision
+from additional_files.prime_related_functions import get_prime_scope
 
 def euler_n10(do_print_result: bool, limit: int = 2000000) -> int:
     time_1 = time_ns()

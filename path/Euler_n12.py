@@ -4,8 +4,8 @@ So the 7th triangle number would be 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.
 What is the value of the first triangle number to have over five hundred divisors?
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.other_functions import get_divisors
+from additional_files.accessibility_settings import time_precision
+from additional_files.other_functions import get_divisors
 
 
 def euler_n12(do_print_result: bool, divisors_limit: int = 500) -> int:

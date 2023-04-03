@@ -2,7 +2,7 @@
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum of them.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
+from additional_files.accessibility_settings import time_precision
 
 def euler_n6(do_print_result: bool, first_integers: int = 100) -> int:
     time_1 = time_ns()

@@ -3,8 +3,8 @@ Find the thirteen adjacent digits in the 1000-digit number (the `const_digits` v
 What is the value of this product?
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.constants import const_digits
+from additional_files.accessibility_settings import time_precision
+from additional_files.constants import const_digits
 
 
 def euler_n8(do_print_result: bool, digits: str = "", adjacent_digits: int = 13) -> int:

@@ -4,8 +4,8 @@ Find the starting number lower than one million that produces the longest chain.
 Note: Once the chain starts the terms are allowed to go above one million.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.other_functions import euler_14_sequence
+from additional_files.accessibility_settings import time_precision
+from additional_files.other_functions import euler_14_sequence
 
 def euler_n14(do_print_result: bool, limit: int = 1000000) -> int:
     time_1 = time_ns()

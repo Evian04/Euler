@@ -3,8 +3,8 @@ By starting at the top of the triangle `const_triangle` and moving to adjacent n
 find the maximum sum that can be reached by adding the all the number of a certain path.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.constants import const_triangle
+from additional_files.accessibility_settings import time_precision
+from additional_files.constants import const_triangle
 
 def euler_n18(do_print_result: bool, triangle: list[list[int]] = const_triangle) -> int:
     time_1 = time_ns()

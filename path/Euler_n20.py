@@ -2,8 +2,8 @@
 Find the sum of the digits of the number 100!.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.other_functions import factorial
+from additional_files.accessibility_settings import time_precision
+from additional_files.other_functions import factorial
 
 def euler_n20(do_print_result: bool, n: int = 0) -> int:
     time_1 = time_ns()

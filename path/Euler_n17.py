@@ -2,8 +2,8 @@
 If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.other_functions import get_letters
+from additional_files.accessibility_settings import time_precision
+from additional_files.other_functions import get_letters
 
 def euler_n17(do_print_result: bool, limit: int = 1000) -> int:
     time_1 = time_ns()

@@ -2,8 +2,8 @@
 Find the largest palindrome made from the product of two 3-digit numbers.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.other_functions import is_palindrome
+from additional_files.accessibility_settings import time_precision
+from additional_files.other_functions import is_palindrome
 
 def euler_n4(do_print_result: bool, range_of_ab: int = 1000) -> int:
     time_1 = time_ns()

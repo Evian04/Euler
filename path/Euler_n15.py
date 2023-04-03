@@ -3,7 +3,7 @@ Find how many routes are there through a 20x20 grid by starting at the top-left 
 finishing at the top right corner, and only being able to go right or down.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
+from additional_files.accessibility_settings import time_precision
 
 def euler_n15(do_print_result: bool, grid_size: int = 20) -> int:
     time_1 = time_ns()

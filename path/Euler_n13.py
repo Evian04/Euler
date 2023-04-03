@@ -2,8 +2,8 @@
 Find the first ten digits of the sum of the following one-hundred 50-digit numbers (the `const_list_50_digits_numbers` variable).
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.constants import const_list_50_digits_numbers
+from additional_files.accessibility_settings import time_precision
+from additional_files.constants import const_list_50_digits_numbers
 
 def euler_n13(do_print_result: bool, list_numbers: list[int] = []) -> str:
     time_1 = time_ns()

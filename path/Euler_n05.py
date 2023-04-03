@@ -2,8 +2,8 @@
 Find the smallest positive number that is evenly divisible by all of the numbers from 1 to 20.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.prime_related_functions import get_prime_decomp
+from additional_files.accessibility_settings import time_precision
+from additional_files.prime_related_functions import get_prime_decomp
 
 def euler_n5(do_print_result: int, upper_limit: int = 20) -> int:
     time_1 = time_ns()

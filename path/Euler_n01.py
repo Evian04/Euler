@@ -2,7 +2,7 @@
 Find the sum of all the multiples of 3 or 5 below 1000.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
+from additional_files.accessibility_settings import time_precision
 
 def euler_n1(do_print_result: bool, limit: int = 1000) -> list[int]:
     time_1 = time_ns()

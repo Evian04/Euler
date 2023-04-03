@@ -2,8 +2,8 @@
 How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.other_functions import is_leap
+from additional_files.accessibility_settings import time_precision
+from additional_files.other_functions import is_leap
 
 def euler_n19(do_print_result: bool, day_to_check = "Sunday") -> int:
     time_1 = time_ns()

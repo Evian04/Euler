@@ -2,7 +2,7 @@
 There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product a*b*c.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
+from additional_files.accessibility_settings import time_precision
 
 def euler_n9(do_print_result: bool) -> int:
     time_1 = time_ns()

@@ -3,8 +3,8 @@ Find the greatest product of four adjacent numbers in the same direction (up, do
 in the 20 x 20 grid (the `const_grid` variable).
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.constants import const_grid
+from additional_files.accessibility_settings import time_precision
+from additional_files.constants import const_grid
 
 def euler_n11(do_print_result: bool, grid: list[list[int]] = []) -> int:
     time_1 = time_ns()

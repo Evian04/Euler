@@ -2,7 +2,7 @@
 Find the largest prime factor of the number 600 851 475 143.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
+from additional_files.accessibility_settings import time_precision
 
 def euler_n3(do_print_result, number_to_test: int = 600851475143) -> int:
     time_1 = time_ns()

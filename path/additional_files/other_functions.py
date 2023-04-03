@@ -37,7 +37,7 @@ def get_letters(n: int) -> str:
     in_letters = ""
     
     if n >= 10 ** 12:
-        print("Error function `path.additional_script.other_functions.get_letters()` : the given number is too big (bigger than a thousand billion)")
+        print("Error function `path.additional_files.other_functions.get_letters()` : the given number is too big (bigger than a thousand billion)")
         return ""
 
     if n >= 10 ** 9:
@@ -69,7 +69,7 @@ def get_letters(n: int) -> str:
     if n >= 0:
         return number_to_letters[n]
     
-    print("Error function `path.additional_script.other_functions.get_letters()` : the given number cannot be negative")
+    print("Error function `path.additional_files.other_functions.get_letters()` : the given number cannot be negative")
 
 def is_leap(year: int) -> bool:
     if year % 4 != 0 or year % 400 == 0:

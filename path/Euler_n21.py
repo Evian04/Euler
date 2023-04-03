@@ -4,8 +4,8 @@ If d(a) = b and d(b) = a, where a ≠ b, then a and b are an amicable pair and e
 Find the sum of all the amicable numbers under 1000.
 """
 from time import time_ns
-from additional_script.accessibility_settings import time_precision
-from additional_script.other_functions import get_related_amicable
+from additional_files.accessibility_settings import time_precision
+from additional_files.other_functions import get_related_amicable
 
 def euler_n21(do_print_result: bool, limit: int = 10000) -> int:
     time_1 = time_ns()
