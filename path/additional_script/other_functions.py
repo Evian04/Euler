@@ -82,3 +82,24 @@ def factorial(n: int) -> int:
         return 1
     
     return n * factorial(n - 1)
+
+def sum_of_divisors(n: int) -> int:
+    divisors = get_divisors(n)
+
+    if len(divisors) != 1:
+        divisors.pop(1)
+    
+    sum = 0
+
+    for d in divisors:
+        sum += d
+
+    return sum
+
+def get_related_amicable(n: int) -> int:
+    related_n = sum_of_divisors(n)
+
+    if sum_of_divisors(related_n) == n and related_n != n:
+        return related_n
+
+    return 0
