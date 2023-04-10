@@ -86,7 +86,7 @@ def factorial(n: int) -> int:
 def sum_of_divisors(n: int) -> int:
     divisors = get_divisors(n)
 
-    if len(divisors) != 1:
+    if len(divisors) > 1:
         divisors.pop(1)
     
     sum = 0
@@ -103,3 +103,16 @@ def get_related_amicable(n: int) -> int:
         return related_n
 
     return 0
+
+def is_abundant(n: int) -> bool:
+    divisors = get_divisors(n)
+
+    if len(divisors) > 1:
+        divisors.pop(1)
+
+    sum = 0
+
+    for d in divisors:
+        sum += d
+    
+    return sum > n
